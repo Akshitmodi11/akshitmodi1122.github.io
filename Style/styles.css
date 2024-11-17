@@ -631,3 +631,67 @@ span {
     transform: scale(1.4);
     transition: transform 0.3s ease-in-out;
   }
+  /* For small screens (phones) */
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar on small screens */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    /* Adjust font sizes for readability */
+    .home-content h1 {
+        font-size: 1.8em;
+    }
+    .home-content h3 {
+        font-size: 1.2em;
+    }
+    
+    /* Adjust button size */
+    .btn {
+        padding: 10px 20px;
+    }
+
+    /* Adjust image sizes */
+    .home-img img,
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Stack items vertically in sections */
+    .about-content,
+    .services-container,
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For very small screens (extra small phones) */
+@media only screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 1.5em;
+    }
+    .home-content h3 {
+        font-size: 1em;
+    }
+
+    .social-media a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+
+    /* Footer adjustments */
+    #footer .social-media a {
+        margin: 0 8px;
+    }
+}
