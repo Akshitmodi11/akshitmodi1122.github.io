@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Personal Portfolio Website Design | @heresthecode</title>
+
+        <!--  FONT-AWeSOME  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--  MAIN CSS  -->
+        <link rel="stylesheet" href="Style/styles.css">
+    </head>
+    <body>
+        <!--  header design  -->
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#Certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!--  home section design  -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, Myself</h3>
+                <h1>Akshit Modi</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <h3>I am a Master's student of Biomedical Informatics and Data Science</h3>
+
+                <div class="social-media">
+                    
+                    <a href="https://github.com/Akshitmodi11" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/akshitmodi22" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/akshit__modi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                   
+                </div>
+                <a href="Akshit Modi_Resume.pdf" target="_blank" class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="img/file.png" alt="" >
+            </div>
+        </section>
+
+        <!--  about section design  -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/image.png" class="responsive-img" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Data Scientist/Analyst</h3>
+                <p>I am a Data Science and Biomedical Informatics graduate student at Arizona State University with a strong background in data analysis, statistical analysis, and web application development. Leveraging AWS for scalable, cloud-based deployments, I have implemented solutions that drive significant impact, from optimizing healthcare accessibility to improving revenue cycle efficiency. My expertise in RCM (Revenue Cycle Management) as a data analyst has contributed to more efficient billing processes and financial stability for healthcare providers. Skilled in Python, SQL, and Tableau, I excel at transforming complex data into strategic insights that support evidence-based decision-making. I am passionate about applying data science to address real-world challenges in healthcare, creating solutions that not only enhance operational workflows but also have a lasting impact on accessibility and quality of care.</p>
+                <a href=" " class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!--  Experience section design  -->
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Experience</span></h2>
+             
+            <!--Data Analyst Experience section-->
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Data Analyst</h3>
+                    <p>Arizona State University,Tempe,AZ  &nbsp;&nbsp;&nbsp; Feb 2024-May 2024 </p>
+                    <p class="aligned-text">Identified Federally Qualified Health Center (FQHC) shortage areas in Arizona, leading to a Medicaid policy that improved access to healthcare for millions of Medicaid enrollees.<br></p>
+                    <div class="aligned-text" id="more-content1" style="display: none;">
+                    <p>Utilized advanced Excel techniques for data cleaning and created dynamic Tableau dashboards to visualize relationships between population, county, and GeoID, delivering a detailed report that directly influenced policy decision-making.</p>
+                    </div>
+                       <!-- Use a button instead of a link -->
+                    <button class="btn" onclick="toggleContent1()">Read More</button>
+                  </div>
+        
+                      <!-- Link to the external JavaScript file -->
+                     <script src="JS/toggleContent.js"></script>
+               
+
+                <!--RCM Analyst Experience section-->
+                <div class="services-box">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>RCM Analyst</h3>
+                    <p>Meditab Software Pvt. Ltd, Ahmedabad &nbsp;&nbsp;&nbsp; April 2022-July 2023</p> 
+                    <p class="aligned-text">Increased provider’s revenue by 50%, recovering $8 million in 7 months through effective optimization of billing workflows and reduction in claim denials.<br></p>
+                    <!-- Hidden paragraph for additional content -->
+                    <div class="aligned-text" id="more-content2" style="display: none;">
+                        <p>Collaborated with a team of 4 Medical billing executives, utilizing data analysis and RCM techniques to identify denial problems, reducing claim processing time by 30%, which increased reimbursement rates by 30%.<br><br>
+                        SQL-based revenue cycle reports and Tableau dashboards to track the top reason for denial, enhancing decision-making and improving billing accuracy by 25%, which directly contributed to a healthier financial position.</p>
+                    </div>
+                
+                    <!-- Use a button instead of a link -->
+                    <div>
+                      <button class="btn" onclick="toggleContent2()">Read More</button></div>
+                    <!-- Link to the external JavaScript file -->
+                    <script src="JS/toggleContent.js"></script>
+                </div>
+  
+                   
+                <div class="services-box">
+                    <i class="fa-brands fa-globe"></i>
+                    <h3>Intern</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam harum reprehenderit dolores aut id. Est, aspernatur!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!--  Project section design  -->
+        <section class="portfolio" id="projects">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="project_image/1681994733054.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Student Score Forecasting System</h4>
+                        <p>End to End ML  &nbsp;&nbsp;&nbsp; June 2024-Aug 2024 </p>
+                        <a href="https://github.com/Akshitmodi11/ML_project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/Akshitmodi11/ML_project"><p class="background_link">Read More</p></a>
+                     </div>
+                  </div>
+        
+                      <!-- Link to the external JavaScript file -->
+
+                <div class="portfolio-box">
+                    <img src="project_image/Project_01.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Developed a student score prediction model using CatBoost, achieving 96% accuracy through data cleaning, feature engineering, and model optimization techniques.<br>
+                           Built a web application using Flask, HTML, and CSS to deliver real-time predictions, deploying it on AWS Elastic Beanstalk.<br>
+                          Enhanced data-driven insights for student performance, supporting educational decision-making with accurate, real-time predictions.</p>
+
+                          <a href="https://example.com" target="_blank" class="info-button">Get More Information</a>
+
+                        
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="project_image/Project_01.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="project_image/Project_01.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="project_image/Project_01.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="project_image/Project_01.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="https://github.com/Akshitmodi11/ML_project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+
+        <section id="Certifications" class="services">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="home-content">
+              <h2 class="heading">Certification<span>/Badges</span></h2>
+              <h6 class="cert-description"> Discover my achievements and certifications, each narrating a tale of dedication in my journey.</h6>
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/AWS Certified Cloud Practitioner certificate.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Coursera_Data_Analytics.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Coursera deep_learning _page-0001.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+            
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Python_punjab_university.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Coursera Python_page-0001.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Coursera -standfordML.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+            
+            </div>
+    
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="/Users/akshitmodi/Downloads/120658_Portfolio/img/1.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/Certificates-1_IIT_gn.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+    
+              <div class="col-lg-4 col-md-6 portfolio-item zoom-item ">
+                <div class="container custom-container">        
+                  <img src="Certificate_images/ITT_page-0001.jpg" alt="Image" class="img-fluid">
+                </div>            
+              </div>
+            
+            </div>
+    
+          </div>
+        </section>
+
+        <!--  contact section design  -->
+        <section class="contact" id="contact">
+          <h2 class="heading">Contact <span>Me!</span></h2>
+      
+          <form id="contact-form">
+              <div class="input-box">
+                  <input type="text" name="name" placeholder="Full Name" required>
+                  <input type="email" name="email" placeholder="Email Address" required>
+              </div>
+              <div class="input-box">
+                  <input type="phone" name="phone" placeholder="Mobile Number">
+                  <input type="text" name="subject" placeholder="Email Subject" required>
+              </div>
+              <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+              <input type="submit" value="Send Message" class="btn">
+          </form>
+      </section>
+      
+      <!-- EmailJS script and custom script link -->
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="JS/contact-form.js"></script>
+      
+
+        
+
+        <!--  TYPED JS  -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!--  SCROLL REVEAL  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src=" /bootstrap/css/js/bootstrap.bundle.min.js"></script>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--  MAIN JS  -->
+        <script src="JS/main.js"></script>
+        <!-- AOS resources -->
+        <script src="aos/aos.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- -->
+
+        
+
+          <!--  contact section design  -->
+
+
+        
+        
+       <!-- Footer -->>
+        </footer> -->
+        <footer id="footer">
+          <p class="centered-text">Akshit Modi</p>
+          <div class="social social-media">
+              <a class="centered-text" href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a class="centered-text" href="https://www.linkedin.com/in/akshitmodi22" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a class="centered-text" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a class="centered-text" href="https://www.instagram.com/akshit__modi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p class="centered-text copyright">Copyright &copy; 2024 by @akshitmodi | All Rights Reserved.</p>
+      </footer>
+      
+
+      
+
+  </body>
+</html>
