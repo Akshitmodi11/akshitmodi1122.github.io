@@ -635,10 +635,18 @@ span {
 @media (max-width: 768px) {
     /* Header */
     .header {
+        display: none;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #333; /* Adjust background color */
         flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        text-align: center;
+        padding: 15px 0;
     }
+    .navbar.show {
+        display: flex;
 
     .navbar {
         display: none; /* Hide navbar by default */
@@ -654,6 +662,16 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #menu-icon {
+        display: block;
+        position: fixed;
+        left: 15px;
+        bottom: 15px;
+        font-size: 1.8em;
+        color: #fff;
+        cursor: pointer;
+        z-index: 10;
     }
 
     /* Home Section */
